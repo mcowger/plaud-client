@@ -1,4 +1,4 @@
-# Plaud API TypeScript Client & CLI (`plaud-client`)
+# Plaud API TypeScript Client & CLI (`@mcowger/plaud-client`)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Bun](https://img.shields.io/badge/Bun-1.3+-black.svg)](https://bun.sh)
@@ -40,12 +40,12 @@ Provides full support for OAuth 2.0 + PKCE authentication, local and remote/head
 
 ```bash
 # Install globally for CLI usage
-npm install -g plaud-client
+npm install -g @mcowger/plaud-client
 
 # Or install in your project as an SDK dependency
-npm install plaud-client
+npm install @mcowger/plaud-client
 # or
-bun add plaud-client
+bun add @mcowger/plaud-client
 ```
 
 ### 2. CLI Usage (`plaud-client`)
@@ -72,7 +72,7 @@ plaud-client get <recording_id> --text
 ### 3. Programmatic SDK Usage
 
 ```typescript
-import { PlaudClient, fileDetailToMarkdown } from "plaud-client";
+import { PlaudClient, fileDetailToMarkdown } from "@mcowger/plaud-client";
 
 // Initialize client (uses ~/.plaud/tokens.json by default)
 const client = new PlaudClient();

@@ -29,7 +29,7 @@ export async function runCli(args: string[] = process.argv.slice(2)): Promise<vo
   }
 
   if (command === "--version" || command === "-v") {
-    console.log("plaud-client v0.1.0");
+    console.log("@mcowger/plaud-client v0.1.0");
     return;
   }
 

@@ -28,7 +28,7 @@ describe("CLI Tool", () => {
 
     try {
       await runCli(["--version"]);
-      expect(output).toContain("plaud-client v0.1.0");
+      expect(output).toContain("@mcowger/plaud-client v0.1.0");
     } finally {
       console.log = originalLog;
     }

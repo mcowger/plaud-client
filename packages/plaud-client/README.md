@@ -1,7 +1,7 @@
-# plaud-client
+# @mcowger/plaud-client
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![npm version](https://img.shields.io/npm/v/plaud-client.svg)](https://www.npmjs.com/package/plaud-client)
+[![npm version](https://img.shields.io/npm/v/@mcowger/plaud-client.svg)](https://www.npmjs.com/package/@mcowger/plaud-client)
 
 TypeScript client library and CLI for the Plaud REST API with OAuth 2.0 PKCE authentication, remote/headless sign-in, proactive 48-hour token auto-refresh, and transcript formatters.
 
@@ -18,9 +18,9 @@ TypeScript client library and CLI for the Plaud REST API with OAuth 2.0 PKCE aut
 ## Installation
 
 ```bash
-npm install plaud-client
+npm install @mcowger/plaud-client
 # or
-bun add plaud-client
+bun add @mcowger/plaud-client
 ```
 
 ## Quick Start
@@ -28,7 +28,7 @@ bun add plaud-client
 ### 1. SDK Usage
 
 ```typescript
-import { PlaudClient, fileDetailToMarkdown } from "plaud-client";
+import { PlaudClient, fileDetailToMarkdown } from "@mcowger/plaud-client";
 
 const client = new PlaudClient();
 
@@ -80,7 +80,7 @@ plaud-client get <recording_id> --srt
 When running on a headless VPS or remote server without a local browser:
 
 ```typescript
-import { PlaudClient } from "plaud-client";
+import { PlaudClient } from "@mcowger/plaud-client";
 
 const client = new PlaudClient();
 
@@ -99,7 +99,7 @@ await client.oauth.completeManualLogin(pastedCallbackUrl, verifier, state);
 By default, tokens are saved to `~/.plaud/tokens.json` (0600 permissions on Unix). You can pass a custom `TokenStore`:
 
 ```typescript
-import { PlaudClient, MemoryTokenStore } from "plaud-client";
+import { PlaudClient, MemoryTokenStore } from "@mcowger/plaud-client";
 
 const store = new MemoryTokenStore({
   access_token: "YOUR_ACCESS_TOKEN",
@@ -119,7 +119,7 @@ import {
   segmentsToMarkdown,
   segmentsToSrt,
   segmentsToText,
-} from "plaud-client";
+} from "@mcowger/plaud-client";
 
 const file = await client.getFile("REC_12345");
 const segments = parseTranscriptSegments(file.source_list);

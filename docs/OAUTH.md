@@ -29,7 +29,7 @@ For desktop / laptop environments where local port `8199` is reachable and a bro
 6. `plaud-client` validates state, exchanges `code` + `code_verifier` for access and refresh tokens, and saves them to disk.
 
 ```typescript
-import { PlaudClient } from "plaud-client";
+import { PlaudClient } from "@mcowger/plaud-client";
 
 const client = new PlaudClient();
 await client.oauth.login();

@@ -43,7 +43,7 @@
 Main entry point for interacting with the Plaud REST API.
 
 ```typescript
-import { PlaudClient } from "plaud-client";
+import { PlaudClient } from "@mcowger/plaud-client";
 
 const client = new PlaudClient(config?: PlaudClientConfig);
 ```
@@ -198,7 +198,7 @@ await client.oauth.logout();
 Saves tokens to disk at `~/.plaud/tokens.json` by default with `0600` permissions on Unix.
 
 ```typescript
-import { FileTokenStore } from "plaud-client";
+import { FileTokenStore } from "@mcowger/plaud-client";
 
 const store = new FileTokenStore("/custom/path/tokens.json");
 ```
@@ -208,7 +208,7 @@ const store = new FileTokenStore("/custom/path/tokens.json");
 In-memory storage for testing or ephemeral server environments.
 
 ```typescript
-import { MemoryTokenStore } from "plaud-client";
+import { MemoryTokenStore } from "@mcowger/plaud-client";
 
 const store = new MemoryTokenStore({
   access_token: "abc...",
@@ -227,7 +227,7 @@ const store = new MemoryTokenStore({
 Extracts and sorts `Segment` objects from `FileDetail.source_list`.
 
 ```typescript
-import { parseTranscriptSegments } from "plaud-client";
+import { parseTranscriptSegments } from "@mcowger/plaud-client";
 
 const segments = parseTranscriptSegments(fileDetail.source_list);
 ```
@@ -237,7 +237,7 @@ const segments = parseTranscriptSegments(fileDetail.source_list);
 Extracts AI summary notes from `FileDetail.note_list`.
 
 ```typescript
-import { extractSummaryNotes } from "plaud-client";
+import { extractSummaryNotes } from "@mcowger/plaud-client";
 
 const notes = extractSummaryNotes(fileDetail.note_list);
 ```
