@@ -1,0 +1,10 @@
+{
+  "worktree": {
+    "setup": "bun install"
+  },
+  "scripts": {
+    "build": { "command": "bun run build" },
+    "test": { "command": "bun test" },
+    "publish": { "command": "bun run build && npm publish --workspace @mcowger/plaud-client --access public" }
+  }
+}
