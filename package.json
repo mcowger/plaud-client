@@ -7,10 +7,12 @@
   "scripts": {
     "test": "bun test",
     "build": "bun run --filter '*' build",
-    "typecheck": "bun run --filter '*' typecheck"
+    "typecheck": "bun run --filter '*' typecheck",
+    "prepare": "lefthook install"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
+    "lefthook": "^2.1.10",
     "typescript": "^5.5.0"
   }
 }
