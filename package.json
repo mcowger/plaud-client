@@ -8,6 +8,7 @@
     "test": "bun test",
     "build": "bun run --filter '*' build",
     "typecheck": "bun run --filter '*' typecheck",
+    "plaud": "bun run --filter @mcowger/plaud-client build && bun packages/plaud-client/dist/cli.js",
     "prepare": "lefthook install"
   },
   "devDependencies": {
