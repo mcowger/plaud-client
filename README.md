@@ -136,6 +136,12 @@ bun run build
 
 ---
 
+## Acknowledgments
+
+Special thanks to [@lmmx](https://github.com/lmmx) and the [`plaudit`](https://github.com/lmmx/plaudit) Rust project, which served as an invaluable reference and guide for the OAuth PKCE authentication flow and Plaud REST API integration.
+
+---
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).

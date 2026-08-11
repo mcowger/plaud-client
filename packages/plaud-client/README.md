@@ -131,6 +131,10 @@ const srt = segmentsToSrt(segments, { "Speaker 1": "Alice", "Speaker 2": "Bob" }
 const markdown = segmentsToMarkdown(segments, { includeTimestamps: true });
 ```
 
+## Acknowledgments
+
+Special thanks to [@lmmx](https://github.com/lmmx) and the [`plaudit`](https://github.com/lmmx/plaudit) Rust project, which served as an invaluable reference and guide for the OAuth PKCE authentication flow and Plaud REST API integration.
+
 ## License
 
 [MIT](LICENSE)
